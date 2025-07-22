@@ -3,15 +3,13 @@
 A Retrieval-Augmented Generation (RAG) backend for legal queries with citations.
 
 ## Prerequisites
-- Python 3.8+  
-- Git  
-- (Optional) GPU for faster LLM inference
+- Python 3.11  
 
 ## Setup
 
 1. **Clone the repository**
     ```bash
-    git clone <repo-url>
+    git clone https://github.com/vaibhavvmudgal/lexi.sg-rag-backend-test
     cd lexi.sg-rag-backend-test
     ```
 

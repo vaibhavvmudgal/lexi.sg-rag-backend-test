@@ -64,23 +64,3 @@ http://127.0.0.1:8000/docs
 
 Use the **POST /query** endpoint to submit legal questions.
 
-### cURL example
-```bash
-curl -X POST http://127.0.0.1:8000/query \
-  -H "Content-Type: application/json" \
-  -d '{"query":"Is an insurance company liable to pay compensation if a transport vehicle involved in an accident was being used without a valid permit?"}'
-
-  Example response
-  {
-  "answer": "No, an insurance company is not liable to pay compensation if a transport vehicle is used without a valid permit at the time of the accident. The Supreme Court held that use of a vehicle in a public place without a permit is a fundamental statutory infraction, and such a situation is not equivalent to cases involving absence of licence, fake licence, or breach of conditions such as overloading. Therefore, the insurer is entitled to recover the compensation amount from the owner and driver after paying the claim.",
-  "citations": [
-    {
-      "text": "Use of a vehicle in a public place without a permit is a fundamental statutory infraction. The said situations cannot be equated with absence of licence or a fake licence or a licence for different kind of vehicle, or, for that matter, violation of a condition of carrying more number of passengers.",
-      "source": "Doc_Name.docx"
-    },
-    {
-      "text": "Therefore, the tribunal as well as the High Court had directed that the insurer shall be entitled to recover the same from the owner and the driver.",
-      "source": "Doc_Name.docx"
-    }
-  ]
-};

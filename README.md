@@ -24,18 +24,11 @@ A Retrieval-Augmented Generation (RAG) backend for legal queries with citations.
 
 3. **Configure your OpenRouter API key**
 
-    Copy the example and fill in your key:
-    ```bash
-    cp .env.example .env
-    ```
     Then edit `.env` and set:
     ```ini
     OPENROUTER_API_KEY=sk-or-<your_openrouter_api_key>
     ```
-    Alternatively, export directly:
-    ```bash
-    export OPENROUTER_API_KEY="sk-or-..."
-    ```
+  
 
 4. **Build embeddings & FAISS index**
 
@@ -62,7 +55,7 @@ http://127.0.0.1:8000/docs
 or
 http://57.183.12.62:8080/docs (Deployed here)
 
-Use the **POST /query** endpoint to submit legal question(s).
+### Use the **POST /query** endpoint to submit legal question(s).
 Eg: {
         "query": "Is an insurance company liable to pay compensation if a transport vehicle involved in an accident was being used without a valid permit?"
     }

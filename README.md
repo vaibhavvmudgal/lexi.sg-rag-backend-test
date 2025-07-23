@@ -59,6 +59,13 @@ A Retrieval-Augmented Generation (RAG) backend for legal queries with citations.
 Open in your browser:
 
 http://127.0.0.1:8000/docs
+or
+http://57.183.12.62:8080/docs (Deployed here)
 
-Use the **POST /query** endpoint to submit legal questions.
+Use the **POST /query** endpoint to submit legal question(s).
+Eg: {
+        "query": "Is an insurance company liable to pay compensation if a transport vehicle involved in an accident was being used without a valid permit?"
+    }
+
+
 

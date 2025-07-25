@@ -41,12 +41,6 @@ def generate_completion(prompt: str) -> str:
         ],
         temperature=0.0,
         max_tokens=256,
-        # Optional: for openrouter.ai usage rankings
-        # extra_headers={
-        #     "HTTP-Referer": "<YOUR_SITE_URL>",
-        #     "X-Title": "<YOUR_SITE_NAME>",
-        # },
-        # extra_body={},
     )
     return resp.choices[0].message.content.strip()
 
@@ -87,7 +81,7 @@ async def root():
 def query(req: QueryRequest):
     # 3.a Embed & retriev e top-3 snippets
     q_emb = embedder.encode(req.query).astype("float32")
-    D, I = index.search(np.array([q_emb]), k=3)
+    D, I = index.search(np.array([q_emb]), k=2)
 
     # 3.b Collect snippets
     retrieved = [metadata[i] for i in I[0]]

@@ -25,7 +25,7 @@ client = OpenAI(
     api_key=apikey,
 )
 
-MODEL_NAME = "meta-llama/llama-3.3-70b-instruct:free"
+MODEL_NAME = "qwen/qwen3-235b-a22b-07-25:free"
 
 
 def generate_completion(prompt: str) -> str:
